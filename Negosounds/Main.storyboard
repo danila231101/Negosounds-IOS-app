@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Negosound" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3H-Ln-frR">
+                                <rect key="frame" x="42" y="228" width="287" height="363"/>
+                                <state key="normal" image="хлыст.png"/>
+                                <connections>
+                                    <action selector="actionofbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CW1-zz-IxZ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZp-K9-cwa" customClass="GADBannerView">
+                                <rect key="frame" x="47" y="73" width="320" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="W9O-gi-tKA"/>
+                                    <constraint firstAttribute="height" constant="50" id="viZ-Mf-gUv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ZZp-K9-cwa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="1fR-kE-Xsl"/>
+                            <constraint firstItem="R3H-Ln-frR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="B4Q-E5-j0j"/>
+                            <constraint firstItem="ZZp-K9-cwa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mbp-IA-K7h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R3H-Ln-frR" secondAttribute="trailing" constant="85" id="NXS-w0-G6w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R3H-Ln-frR" secondAttribute="bottom" constant="271" id="ioe-Zy-ffb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="R3H-Ln-frR" secondAttribute="top" constant="-184" id="yRA-US-Kri"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Ig2-6e-iXb" appends="YES" id="G1u-2r-efk"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="u6o-1i-fvF"/>
+                    <connections>
+                        <outlet property="Bannerview" destination="ZZp-K9-cwa" id="XQe-ZV-7W3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="Ig2-6e-iXb">
+                    <connections>
+                        <segue destination="pk9-dm-Gyc" kind="show" id="oc1-PX-k4I"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="133.25892857142856"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="VYU-wN-jAA">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="pk9-dm-Gyc" customClass="ViewController2" customModule="Negosound" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="csc-7v-SAP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hk7-od-uyC">
+                                <rect key="frame" x="92" y="259" width="242" height="329"/>
+                                <state key="normal" image="bdmts.png"/>
+                                <connections>
+                                    <action selector="maksound:" destination="pk9-dm-Gyc" eventType="touchUpInside" id="rBm-Jl-4YH"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sx5-2i-Bu8" customClass="GADBannerView">
+                                <rect key="frame" x="47" y="73" width="320" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3wv-Hb-7NG"/>
+                                    <constraint firstAttribute="width" constant="320" id="Ewm-3D-ZoZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UQO-TJ-6Xi"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="hk7-od-uyC" firstAttribute="leading" secondItem="UQO-TJ-6Xi" secondAttribute="leading" constant="92" id="0Eb-vW-rb8"/>
+                            <constraint firstItem="UQO-TJ-6Xi" firstAttribute="trailing" secondItem="hk7-od-uyC" secondAttribute="trailing" constant="80" id="3XS-Zr-SeV"/>
+                            <constraint firstItem="sx5-2i-Bu8" firstAttribute="centerX" secondItem="csc-7v-SAP" secondAttribute="centerX" id="6bJ-m8-x7O"/>
+                            <constraint firstItem="sx5-2i-Bu8" firstAttribute="top" secondItem="UQO-TJ-6Xi" secondAttribute="top" constant="29" id="WMo-kn-PG4"/>
+                            <constraint firstItem="hk7-od-uyC" firstAttribute="bottom" secondItem="UQO-TJ-6Xi" secondAttribute="bottom" constant="-274" id="dN4-gq-Q7E"/>
+                            <constraint firstItem="hk7-od-uyC" firstAttribute="top" secondItem="UQO-TJ-6Xi" secondAttribute="top" constant="215" id="wNM-Hd-yBx"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fhe-Ll-1DQ" appends="YES" id="0ht-ob-zNu"/>
+                            <outletCollection property="gestureRecognizers" destination="bk0-tk-fvc" appends="YES" id="akC-d1-RaT"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="9uH-TO-J90"/>
+                    <connections>
+                        <outlet property="BannerVeiw2" destination="sx5-2i-Bu8" id="JrA-zV-xJJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MHZ-Al-fJW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="fhe-Ll-1DQ" userLabel="Swipe Gesture Recognizerleft">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" destinationCreationSelector="stoplayerleft:" id="Q2b-8z-E6T"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="bk0-tk-fvc">
+                    <connections>
+                        <segue destination="D0s-bU-s6f" kind="show" destinationCreationSelector="stopplayer:" id="vcB-zM-vu1"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="991.304347826087" y="132.58928571428572"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="88K-M0-3wf">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="D0s-bU-s6f" customClass="ViewController3" customModule="Negosound" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="89W-7m-IGB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQY-dq-KGi">
+                                <rect key="frame" x="60" y="377.5" width="295" height="151"/>
+                                <state key="normal" image="titers.png"/>
+                                <connections>
+                                    <action selector="prsound:" destination="D0s-bU-s6f" eventType="touchUpInside" id="XUj-Mo-bJm"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3M-Uz-Moj" customClass="GADBannerView">
+                                <rect key="frame" x="47" y="73" width="320" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JA6-sI-4s0"/>
+                                    <constraint firstAttribute="width" constant="320" id="YHo-2n-bxe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y0n-p8-sb5"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="A3M-Uz-Moj" firstAttribute="centerX" secondItem="89W-7m-IGB" secondAttribute="centerX" id="1rN-Dv-hI9"/>
+                            <constraint firstItem="y0n-p8-sb5" firstAttribute="trailing" secondItem="EQY-dq-KGi" secondAttribute="trailing" constant="59" id="BPa-Lz-f8X"/>
+                            <constraint firstItem="A3M-Uz-Moj" firstAttribute="top" secondItem="y0n-p8-sb5" secondAttribute="top" constant="29" id="Euz-p1-QHX"/>
+                            <constraint firstItem="EQY-dq-KGi" firstAttribute="leading" secondItem="y0n-p8-sb5" secondAttribute="leading" constant="60" id="Ie0-r0-0sI"/>
+                            <constraint firstItem="EQY-dq-KGi" firstAttribute="centerY" secondItem="y0n-p8-sb5" secondAttribute="centerY" id="xei-BO-l1J"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="HNf-Nh-NA3" appends="YES" id="SAA-zE-Inx"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="jUw-0x-2Gg"/>
+                    <connections>
+                        <outlet property="BannerView3" destination="A3M-Uz-Moj" id="fMD-ef-Df2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boh-9C-UuG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="HNf-Nh-NA3">
+                    <connections>
+                        <segue destination="pk9-dm-Gyc" kind="show" destinationCreationSelector="stopplayer:" id="ijX-pY-3fl"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1779.7101449275365" y="125.89285714285714"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="oc1-PX-k4I"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="bdmts.png" width="600" height="600"/>
+        <image name="titers.png" width="295" height="151"/>
+        <image name="хлыст.png" width="840" height="859"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
